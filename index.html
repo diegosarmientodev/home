@@ -111,10 +111,15 @@
 
     <section class="contact" id="contacto">
       <div class="container">
-        <form class="form-email" action="emails.txt" method="post">
-          <h3 id="creacion">Creamos algo juntos?</h3>
-          <input id="email" type="email" name="" value="" placeholder="Dejame tu email">
-          <input id="boton" type="submit" value="Enviar" >
+       <form action="mailto:tecnico@uscom.net.co&amp" class="form-email" method="post" enctype="text/plain">
+          <h3 id="creacion">Enviame un email a tecnico@uscom.net.co</h3>
+
+          <input class="email" type="text" name="mail" placeholder="Email"><br>
+          <input class="caja-tx" type="text"  name="name" placeholder="Nombre"><br>
+          <input class="caja-tx" type="text" name="comment" placeholder="Comentario"><br>
+
+          <input class="boton" type="submit" value="Send">
+          <input class="boton" type="reset" value="Reset">
         </form>
         <div class="social">
           <a target="_blank" href="https://www.facebook.com/diegosarmientodev" class="sc-link facebook"></a>
