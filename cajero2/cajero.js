@@ -123,10 +123,11 @@ function entregarDinero() {
 
     }
     else  {
+      resultado.innerHTML = resultado.innerHTML + "<br/>";
       for(var e of entregado){
 
           if (e.cantidad > 0) {
-          resultado.innerHTML = resultado.innerHTML + e.cantidad + " billete(s) de $" + e.value + "<hr/>" + "<br/>";
+          resultado.innerHTML = resultado.innerHTML + e.cantidad + " billete(s) de $" + e.value + "<br/>" + "<br/>";
           balance = balance - (e.value*e.cantidad);
           if (e.value == caja[0].value && balance > 0 && e.cantidad == 1 || e.value*e.cantidad == 500 || e.value*e.cantidad == 400 || e.value*e.cantidad == 300|| e.value*e.cantidad == 200|| e.value*e.cantidad == 100) {
             caja[0].mostrar0a();
