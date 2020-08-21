@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?y0x07p');
-  src:  url('../fonts/icomoon.eot?y0x07p#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?y0x07p') format('truetype'),
-    url('../fonts/icomoon.woff?y0x07p') format('woff'),
-    url('../fonts/icomoon.svg?y0x07p#icomoon') format('svg');
+  src:  url('../../fonts/icomoon.eot?y0x07p');
+  src:  url('../../fonts/icomoon.eot?y0x07p#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?y0x07p') format('truetype'),
+    url('../../fonts/icomoon.woff?y0x07p') format('woff'),
+    url('../../fonts/icomoon.svg?y0x07p#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -105,26 +105,6 @@ ol, ul{
   max-width: 480px;
 }
 
-.bandera{
-  background-image: url('../images/en.png');
-  height: 15px !important;
-}
-
-.espanol{
-  background-image: url('../en/es.jpg');
-}
-
-.ingles{
-  padding: 1px !important;
-  margin-left: auto;
-}
-
-.caja-ingles{
-  display: flex;
-  align-items: center;
-  padding-right: 7px;
-}
-
 .portafolio{
   background: var(--fondosecundario);
   padding: 10px;
@@ -208,6 +188,26 @@ font-family: 'Fjalla One', sans-serif;
 .ex-list-title{
   margin-left: 20px;
   margin-bottom: 15px;
+}
+
+.bandera{
+  background-image: url('../images/en.png');
+  height: 15px !important;
+}
+
+.espanol{
+  background-image: url('../../en/es.jpg');
+}
+
+.ingles{
+  padding: 1px !important;
+  margin-left: auto;
+}
+
+.caja-ingles{
+  display: flex;
+  align-items: center;
+  padding-right: 7px;
 }
 
 .header{
@@ -294,25 +294,25 @@ font-family: 'Fjalla One', sans-serif;
 }
 
 .sc-link.facebook{
-  background-image: url('../images/facebook.svg');
+  background-image: url('../../images/facebook.svg');
 }
 
 .sc-link.instagram{
-  background-image: url('../images/instagram.svg');
+  background-image: url('../../images/instagram.svg');
 }
 
 .sc-link.github{
-  background-image: url('../images/github.svg');
+  background-image: url('../../images/github.svg');
 }
 
 .sc-link.linkedin{
-  background-image: url('../images/linkedin.svg');
+  background-image: url('../../images/linkedin.svg');
 }
 
 .email{
   border-color: gray;
   padding: 5px 25px 5px 30px;
-  background-image: url('../images/correo.svg');
+  background-image: url('../../images/correo.svg');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -382,47 +382,78 @@ font-family: 'Fjalla One', sans-serif;
   padding: 10px;
 }
 
-.cr-texto{
-  margin: 0 1em;
-  font-size: 18px;
+.botones{
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  background: var(--colorprincipal);
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 6px;
 }
 
-.cr-url{
-  text-decoration: none;
-  color: var(--strong);
+#saldo{
+  background: var(--fondo);
+  color: aliceblue;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 5px;
+  border-radius: 12px;
 }
 
-.cr-strong{
-  color: black;
+#resultado{
+  background: var(--fondo);
+  color: aliceblue;
+  font-family: 'Fjalla One', sans-serif;
+  border-radius: 12px;
+  margin: 0px 6px 16px;
 }
 
-.cr-parrafo{
-  margin: 6px 0;
-  color: black;
+#text{
+  margin:10px;
 }
 
-.cr-imageContainer{
-  width: 45%;
-  display: flex;
-  margin: 10px;
-  flex-direction: column;
-  background-color: var(--fondoterciario);
-  border-radius: 8px;
-  border: 5px solid var(--fondoterciario);
+.atm-description{
+  padding: 10px;
+  background: var(--colorprincipal);
+  color: white;
+  font-size: 19px;
+  margin: 13px 0;
+
 }
 
-.cr-image{
-  width: 100%;
+.atm-imageContainer{
+  margin: 0;
 }
 
-.cr-title{
+.atm-elementos{
+  background: var(--colorprincipal);
+    padding: 16px 0;
+    border-radius: 11px;
+    margin: 16px 0;
+}
+
+.botons{
+  margin:0;
+}
+
+.principal{
+  text-align: center;
+}
+
+.atm-title{
   text-align: center;
   color: var(--strong);
 }
 
-.certificados{
-  display: flex;
-  justify-content: center;
+#atm-imagen{
+  max-width: 100%;
+}
+
+.atm-caja{
+  background: var(--fondoterciario);
+  display: inline-block;
+  padding: 8%;
+  border: 5px solid var(--colorprincipal);
+  border-radius: 17px;
 }
 
 .burger-button{
@@ -554,12 +585,6 @@ font-family: 'Fjalla One', sans-serif;
   .social {
     padding-bottom: 5px;
   }
-  .cr-imageContainer{
-  width: 90%;
-  display: flex;
-  margin: 10px;
-  flex-direction: column;
-  }
   .caja-ingles{
     margin: 20px;
     background: var(--colorprincipal);
@@ -567,14 +592,12 @@ font-family: 'Fjalla One', sans-serif;
     border-radius: 10px;
   }
   .bandera{
-    background-image: url('../images/en.png');
+    background-image: url('../es.jpg');
     border-radius: 0;
     margin-left: 1px;
     margin-right: auto;
   }
-  .espanol{
-    background-image: url('../en/es.jpg');
-  }
+
 }
 
 @media screen and (max-width: 686px) {

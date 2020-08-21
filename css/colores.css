@@ -101,6 +101,29 @@ ol, ul{
   flex-wrap: wrap;
 }
 
+#english{
+}
+
+.bandera{
+  background-image: url('../images/en.png');
+  height: 15px !important;
+}
+
+.espanol{
+  background-image: url('../en/es.jpg');
+}
+
+.ingles{
+  padding: 1px !important;
+  margin-left: auto;
+}
+
+.caja-ingles{
+  display: flex;
+  align-items: center;
+  padding-right: 7px;
+}
+
 .hero-image{
   object-fit: cover;
   align-self: normal;
@@ -494,7 +517,21 @@ font-family: 'Fjalla One', sans-serif;
   .social {
     padding-bottom: 5px;
   }
-
+  .caja-ingles{
+    margin: 20px;
+    background: var(--colorprincipal);
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .bandera{
+    background-image: url('../images/en.png');
+    border-radius: 0;
+    margin-left: 1px;
+    margin-right: auto;
+  }
+  .espanol{
+    background-image: url('../EN/es.jpg');
+  }
 }
 
 @media screen and (max-width: 686px) {
