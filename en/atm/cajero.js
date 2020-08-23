@@ -119,7 +119,7 @@ function entregarDinero() {
       }
     }
     if (dinero > 0) {
-      resultado.innerHTML = "Soy un cajero malo, he sido malo y no puedo darte esa cantidad :(";
+      resultado.innerHTML = "I'm a bad atm, I've been bad and I can't give you that amount :(";
 
     }
     else  {
@@ -189,7 +189,7 @@ function entregarDinero() {
             console.log(e.cantidad, e.value);
         }
         if (balance < 0 || t > balance) {
-          resultado.innerHTML = "No hay suficiente $<br/>"
+          resultado.innerHTML = "There is not enough $<br/>"
           balance = balance + (e.value*e.cantidad);
         }
 
