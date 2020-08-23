@@ -104,7 +104,7 @@ function entregarDinero() {
     var t = document.getElementById("dinero");
     var dinero = parseInt(t.value);
     for (var bi of  caja) {
-      if (dinero > 0) {
+      if (dinero > 0 & dinero <= 825) {
         div = Math.floor(dinero / bi.value);
         if (div > bi.cantidad) {
           papeles = bi.cantidad
