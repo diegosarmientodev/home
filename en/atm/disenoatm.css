@@ -472,6 +472,10 @@ font-family: 'Fjalla One', sans-serif;
   top: 10px;
 }
 
+.creditos{
+  text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
   .hero{
     height: auto;
