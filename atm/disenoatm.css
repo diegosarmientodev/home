@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../fonts/icomoon.eot?y0x07p');
-  src:  url('../../fonts/icomoon.eot?y0x07p#iefix') format('embedded-opentype'),
-    url('../../fonts/icomoon.ttf?y0x07p') format('truetype'),
-    url('../../fonts/icomoon.woff?y0x07p') format('woff'),
-    url('../../fonts/icomoon.svg?y0x07p#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?y0x07p');
+  src:  url('../fonts/icomoon.eot?y0x07p#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?y0x07p') format('truetype'),
+    url('../fonts/icomoon.woff?y0x07p') format('woff'),
+    url('../fonts/icomoon.svg?y0x07p#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -105,6 +105,22 @@ ol, ul{
   max-width: 480px;
 }
 
+.bandera{
+  background-image: url('../images/en.png');
+  height: 15px !important;
+}
+
+.ingles{
+  padding: 1px !important;
+  margin-left: auto;
+}
+
+.caja-ingles{
+  display: flex;
+  align-items: center;
+  padding-right: 7px;
+}
+
 .portafolio{
   background: var(--fondosecundario);
   padding: 10px;
@@ -188,26 +204,6 @@ font-family: 'Fjalla One', sans-serif;
 .ex-list-title{
   margin-left: 20px;
   margin-bottom: 15px;
-}
-
-.bandera{
-  background-image: url('../images/en.png');
-  height: 15px !important;
-}
-
-.espanol{
-  background-image: url('../../en/es.jpg');
-}
-
-.ingles{
-  padding: 1px !important;
-  margin-left: auto;
-}
-
-.caja-ingles{
-  display: flex;
-  align-items: center;
-  padding-right: 7px;
 }
 
 .header{
@@ -294,25 +290,25 @@ font-family: 'Fjalla One', sans-serif;
 }
 
 .sc-link.facebook{
-  background-image: url('../../images/facebook.svg');
+  background-image: url('../images/facebook.svg');
 }
 
 .sc-link.instagram{
-  background-image: url('../../images/instagram.svg');
+  background-image: url('../images/instagram.svg');
 }
 
 .sc-link.github{
-  background-image: url('../../images/github.svg');
+  background-image: url('../images/github.svg');
 }
 
 .sc-link.linkedin{
-  background-image: url('../../images/linkedin.svg');
+  background-image: url('../images/linkedin.svg');
 }
 
 .email{
   border-color: gray;
   padding: 5px 25px 5px 30px;
-  background-image: url('../../images/correo.svg');
+  background-image: url('../images/correo.svg');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -472,6 +468,10 @@ font-family: 'Fjalla One', sans-serif;
   top: 10px;
 }
 
+.creditos{
+  text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
   .hero{
     height: auto;
@@ -592,12 +592,11 @@ font-family: 'Fjalla One', sans-serif;
     border-radius: 10px;
   }
   .bandera{
-    background-image: url('../es.jpg');
+    background-image: url('../images/en.png');
     border-radius: 0;
     margin-left: 1px;
     margin-right: auto;
   }
-
 }
 
 @media screen and (max-width: 686px) {
